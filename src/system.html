@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-slate-900 text-white flex flex-col justify-center">
+
+    <!-- NAVBAR -->
+    <nav class="flex w-100 px-20 mt-3">
+        <div class="w-1/4 text-3xl font-bold">
+            Baul
+        </div>
+        <div class="flex w-3/4 justify-between my-auto">
+            <a href="./index.html" class="font-medium">Home</a>
+            <a href="./system.html" class="font-medium">System</a>
+            <a href="./howto.html" class="font-medium">How does it work</a>
+            <a href="./market.html" class="font-medium">Market research</a>
+            <a href="./budget.html" class="font-medium">Budget</a>
+            <a href="./team.html" class="font-medium">Team</a>
+        </div>
+    </nav>
+
+    <div class="container w-3/4 m-auto pt-10">
+
+        <!-- PAGE HEADER -->
+        <h1 class="text-3xl font-bold text-center">Understanding the system</h1>
+        <p class="text-base font-light italic text-center">To understand the techology behind it can be difficult. That is why this page exist for!</p>
+
+        <section class="w-100 my-20">
+
+            <h2 class="text-2xl font-bold">Map generation using SLAM</h2>
+            <p class="text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
+            <br>
+            <strong class="font-bold">Steps:</strong> <br>
+            1. Position robot in the middle of a room. <br>
+            2. Robot uses random trees to identify points to visit. <br>
+            3. Robot navigates to points it hasn't visited. <br>
+            4. Prioritises areas it has not yet visited. <br>
+            <br>
+            <strong class="font-bold">Algorithm used: Rapidly-exploring random tree (RRT) algorithm</strong> <br>
+            This algorithm builds a tree of traces, where the tree is constructed by randomly generated traces incrementally  in the search space starting at the robot initial position and is inherently biased to grow towards areas that have less information.
+            </p>
+            
+            <div class="mt-5 mx-auto flex flex-col justify-center">
+                <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" width="400" height="225" allow=""></iframe>
+
+                <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
