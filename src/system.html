@@ -101,7 +101,7 @@
         <h1 class="text-3xl font-bold text-center">🛠️ Understanding the system</h1>
         <p class="text-base font-light italic text-center">To understand the techology behind it can be difficult. That is why this page exist for!</p>
 
-        <section class="w-100 my-20">
+        <section class="w-100 my-20" id="map-generation-slam">
 
             <h2 class="text-2xl font-bold">Map generation using SLAM</h2>
             <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
@@ -123,6 +123,75 @@
             </div>
 
         </section>
+
+        <section class="w-100 my-20" id="navigation">
+
+          <h2 class="text-2xl font-bold">Movement of the robot with a path finding algorithm</h2>
+          <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
+          <br>
+          <strong class="font-bold text-justify ">Steps:</strong> <br>
+          1. Position robot in the middle of a room. <br>
+          2. Robot uses random trees to identify points to visit. <br>
+          3. Robot navigates to points it hasn't visited. <br>
+          4. Prioritises areas it has not yet visited. <br>
+          <br>
+          <strong class="font-bold text-justify">Algorithm used: Rapidly-exploring random tree (RRT) algorithm</strong> <br>
+          This algorithm builds a tree of traces, where the tree is constructed by randomly generated traces incrementally  in the search space starting at the robot initial position and is inherently biased to grow towards areas that have less information.
+          </p>
+          
+          <div class="mt-5 mx-auto flex flex-col justify-center">
+              <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
+
+              <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
+          </div>
+
+      </section>
+
+      <section class="w-100 my-20" id="ball-identification">
+
+        <h2 class="text-2xl font-bold">Identification of table tennis balls</h2>
+        <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
+        <br>
+        <strong class="font-bold text-justify ">Steps:</strong> <br>
+        1. Position robot in the middle of a room. <br>
+        2. Robot uses random trees to identify points to visit. <br>
+        3. Robot navigates to points it hasn't visited. <br>
+        4. Prioritises areas it has not yet visited. <br>
+        <br>
+        <strong class="font-bold text-justify">Algorithm used: Rapidly-exploring random tree (RRT) algorithm</strong> <br>
+        This algorithm builds a tree of traces, where the tree is constructed by randomly generated traces incrementally  in the search space starting at the robot initial position and is inherently biased to grow towards areas that have less information.
+        </p>
+        
+        <div class="mt-5 mx-auto flex flex-col justify-center">
+            <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
+
+            <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
+        </div>
+
+    </section>
+
+    <section class="w-100 my-20" id="hardware-mechanism">
+
+      <h2 class="text-2xl font-bold">Mechanism of grabbing and storing the table tennis balls</h2>
+      <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
+      <br>
+      <strong class="font-bold text-justify ">Steps:</strong> <br>
+      1. Position robot in the middle of a room. <br>
+      2. Robot uses random trees to identify points to visit. <br>
+      3. Robot navigates to points it hasn't visited. <br>
+      4. Prioritises areas it has not yet visited. <br>
+      <br>
+      <strong class="font-bold text-justify">Algorithm used: Rapidly-exploring random tree (RRT) algorithm</strong> <br>
+      This algorithm builds a tree of traces, where the tree is constructed by randomly generated traces incrementally  in the search space starting at the robot initial position and is inherently biased to grow towards areas that have less information.
+      </p>
+      
+      <div class="mt-5 mx-auto flex flex-col justify-center">
+          <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
+
+          <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
+      </div>
+
+  </section>
 
     </div>
 
