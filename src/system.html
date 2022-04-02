@@ -153,17 +153,29 @@
 
           <p class="text-justify text-base py-3"><strong class="text-bold">Thresholding: </strong>All pixels outside a colour threshold are removed.  Allows us to isolate individual objects to an extent.</p>
 
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="w-1/2 md:w-3/4 m-auto">
+              <img src="./asset/ball-id-1.png" alt="">
+              <p class="text-sm font-light text-center mt-2">Image before preprocessing.</p>
+            </div>
+            <div class="w-1/2 md:w-3/4 m-auto">
+              <img src="./asset/ball-id-2.png" alt="">
+              <p class="text-sm font-light text-center mt-2">Image after thresholding.</p>
+            </div>
+          </div>
+
           <p class="text-justify text-base py-3"><strong class="text-bold">Contours: </strong>Outline the isolated objects by highlighting the pixels next to the black background.  These outlines tell us information about the object.</p>
+
+          <div class="grid grid-cols-1 gap-5">
+            <div class="w-1/2 md:w-1/2 m-auto">
+              <img class="w-100" src="./asset/ball-id-3.png" alt="">
+              <p class="text-sm font-light text-center mt-2">Image after contouring.</p>
+            </div>
+          </div>
 
           <p class="text-justify text-base py-3">We can use several processes to tell us information about the object.  Firstly we can check the size of the object is above a minimum.  We can tell how curved the outline is (circles are very curved).   We can also compare the width and height of the object.  Circles have a a very similar width and height.</p>
 
           <p class="text-justify text-base py-3">We then remove contours that don't meet this criteria.</p>
-          
-          <div class="mt-5 mx-auto flex flex-col justify-center">
-              <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
-
-              <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
-          </div>
 
         </section>
 
