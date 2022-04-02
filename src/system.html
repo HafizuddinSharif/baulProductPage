@@ -145,53 +145,50 @@
               <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
           </div>
 
-      </section>
+        </section>
 
-      <section class="w-100 my-20" id="ball-identification">
+        <section class="w-100 my-20" id="ball-identification">
 
-        <h2 class="text-2xl font-bold">Identification of table tennis balls</h2>
-        <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
-        <br>
-        <strong class="font-bold text-justify ">Steps:</strong> <br>
-        1. Position robot in the middle of a room. <br>
-        2. Robot uses random trees to identify points to visit. <br>
-        3. Robot navigates to points it hasn't visited. <br>
-        4. Prioritises areas it has not yet visited. <br>
-        <br>
-        <strong class="font-bold text-justify">Algorithm used: Rapidly-exploring random tree (RRT) algorithm</strong> <br>
-        This algorithm builds a tree of traces, where the tree is constructed by randomly generated traces incrementally  in the search space starting at the robot initial position and is inherently biased to grow towards areas that have less information.
-        </p>
-        
-        <div class="mt-5 mx-auto flex flex-col justify-center">
-            <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
+          <h2 class="text-2xl font-bold">Identification of table tennis balls</h2>
 
-            <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
-        </div>
+          <p class="text-justify text-base py-3"><strong class="text-bold">Thresholding: </strong>All pixels outside a colour threshold are removed.  Allows us to isolate individual objects to an extent.</p>
 
-    </section>
+          <p class="text-justify text-base py-3"><strong class="text-bold">Contours: </strong>Outline the isolated objects by highlighting the pixels next to the black background.  These outlines tell us information about the object.</p>
 
-    <section class="w-100 my-20" id="hardware-mechanism">
+          <p class="text-justify text-base py-3">We can use several processes to tell us information about the object.  Firstly we can check the size of the object is above a minimum.  We can tell how curved the outline is (circles are very curved).   We can also compare the width and height of the object.  Circles have a a very similar width and height.</p>
 
-      <h2 class="text-2xl font-bold">Mechanism of grabbing and storing the table tennis balls</h2>
-      <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
-      <br>
-      <strong class="font-bold text-justify ">Steps:</strong> <br>
-      1. Position robot in the middle of a room. <br>
-      2. Robot uses random trees to identify points to visit. <br>
-      3. Robot navigates to points it hasn't visited. <br>
-      4. Prioritises areas it has not yet visited. <br>
-      <br>
-      <strong class="font-bold text-justify">Algorithm used: Rapidly-exploring random tree (RRT) algorithm</strong> <br>
-      This algorithm builds a tree of traces, where the tree is constructed by randomly generated traces incrementally  in the search space starting at the robot initial position and is inherently biased to grow towards areas that have less information.
-      </p>
-      
-      <div class="mt-5 mx-auto flex flex-col justify-center">
-          <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
+          <p class="text-justify text-base py-3">We then remove contours that don't meet this criteria.</p>
+          
+          <div class="mt-5 mx-auto flex flex-col justify-center">
+              <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
 
-          <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
-      </div>
+              <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
+          </div>
 
-  </section>
+        </section>
+
+        <section class="w-100 my-20" id="hardware-mechanism">
+
+          <h2 class="text-2xl font-bold">Mechanism of grabbing and storing the table tennis balls</h2>
+          <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
+          <br>
+          <strong class="font-bold text-justify ">Steps:</strong> <br>
+          1. Position robot in the middle of a room. <br>
+          2. Robot uses random trees to identify points to visit. <br>
+          3. Robot navigates to points it hasn't visited. <br>
+          4. Prioritises areas it has not yet visited. <br>
+          <br>
+          <strong class="font-bold text-justify">Algorithm used: Rapidly-exploring random tree (RRT) algorithm</strong> <br>
+          This algorithm builds a tree of traces, where the tree is constructed by randomly generated traces incrementally  in the search space starting at the robot initial position and is inherently biased to grow towards areas that have less information.
+          </p>
+          
+          <div class="mt-5 mx-auto flex flex-col justify-center">
+              <iframe class="mt-10 mx-auto" src="https://drive.google.com/file/d/1E0Jzrado4Ww2-tATzBUpofAj-9lIbOm2/preview?muted=1" allow=""></iframe>
+
+              <p class="text-sm font-light text-center mt-2">SLAM demonstration</p>
+          </div>
+
+        </section>
 
     </div>
 
