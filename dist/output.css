@@ -610,6 +610,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 75%;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -783,6 +787,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
 }
 
 .text-left {
@@ -1022,6 +1030,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:hidden {
