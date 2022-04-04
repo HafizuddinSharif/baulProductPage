@@ -553,6 +553,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 6rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -561,11 +566,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-}
-
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .mt-3 {
@@ -632,6 +632,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18rem;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -654,6 +658,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-7xl {
   max-width: 80rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-1 {
@@ -700,12 +716,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -742,6 +758,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-double {
+  border-style: double;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-slate-900 {
@@ -1077,12 +1106,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: auto;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-rows-3 {
