@@ -108,7 +108,7 @@
         <h1 class="text-3xl font-bold text-center">🛠️ Understanding the system</h1>
         <p class="text-base font-light italic text-center">To understand the techology behind it can be difficult. That is why this page exist for!</p>
 
-        <section class="w-100 my-20" id="map-generation-slam">
+        <section class="w-100 mt-10 mb-24" id="map-generation-slam">
 
             <h2 class="text-2xl font-bold">Map generation using SLAM</h2>
             <p class="text-justify text-base">Simultaneous localization and mapping (SLAM) allows us to map the playing area autonomously using LIDAR to feed the data for the robot <br>
@@ -134,7 +134,7 @@
         <!-- DIVIDER -->
         <div class="text-sm bg-white flex h-1"></div>
 
-        <section class="w-100 my-20" id="navigation">
+        <section class="w-100 mt-10 mb-24" id="navigation">
 
           <h2 class="text-2xl font-bold">Movement of the robot with a path finding algorithm</h2>
 
@@ -143,7 +143,7 @@
           <p class="text-base font-bold py-3">Algorithm used: Navigation stack - Dynamic Window Approach (DWA) algorithm</p>
           <p class="text-base text-justify pb-3">Simple heuristic algorithm that takes a (x,y) value as goal and outputs the velocity(v, w) and the trajectory to the goal. It searches through all the allowable velocity within the given range, do velocity dynamics and check for each velocity, will the distance to the nearest obstacle be within the robots braking distance. If the robot could stop before it , then mark the velocity as 'admissible'. After the iteration, calculate the optimal one using the internal cost function, and output the trajectory and the velocity to the move base.</p>
 
-          <div class="grid grid-cols-1 gap-5">
+          <div class="grid grid-cols-1 gap-5 mt-10">
             <div class="w-1/2 md:w-1/2 m-auto">
               <img class="w-100" src="./asset/navigation-1.png" alt="">
               <p class="text-sm font-light text-center mt-2">Graphical representation of DWA Algorithm.</p>
@@ -155,13 +155,13 @@
         <!-- DIVIDER -->
         <div class="text-sm bg-white flex h-1"></div>
 
-        <section class="w-100 my-20" id="ball-identification">
+        <section class="w-100 mt-10 mb-24" id="ball-identification">
 
           <h2 class="text-2xl font-bold">Identification of table tennis balls</h2>
 
           <p class="text-justify text-base py-3"><strong class="text-bold">Thresholding: </strong>All pixels outside a colour threshold are removed.  Allows us to isolate individual objects to an extent.</p>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
             <div class="w-1/2 md:w-3/4 m-auto">
               <img src="./asset/ball-id-1.png" alt="">
               <p class="text-sm font-light text-center mt-2">Image before preprocessing.</p>
@@ -174,7 +174,7 @@
 
           <p class="text-justify text-base py-3"><strong class="text-bold">Contours: </strong>Outline the isolated objects by highlighting the pixels next to the black background.  These outlines tell us information about the object.</p>
 
-          <div class="grid grid-cols-1 gap-5">
+          <div class="grid grid-cols-1 gap-5 my-10">
             <div class="w-1/2 md:w-1/2 m-auto">
               <img class="w-100" src="./asset/ball-id-3.png" alt="">
               <p class="text-sm font-light text-center mt-2">Image after contouring.</p>
@@ -190,13 +190,13 @@
         <!-- DIVIDER -->
         <div class="text-sm bg-white flex h-1"></div>
 
-        <section class="w-100 my-20" id="hardware-mechanism">
+        <section class="w-100 mt-10 mb-24" id="hardware-mechanism">
 
           <h2 class="text-2xl font-bold">Mechanism of grabbing and storing the table tennis balls</h2>
           
-          <p class="text-justify text-base py-3"><strong class="text-bold">Thresholding: </strong>All pixels outside a colour threshold are removed.  Allows us to isolate individual objects to an extent.</p>
+          <p class="text-justify text-base py-3">The claw will grab any table tennis ball in range in to the opening of the tower of the robot. Then it will be pushed into the tower and carried up by a screw which located in the tower. After that, It will go through a ramp and finally into a basket that can be located in the rear of the robot.</p>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
             <div class="w-1/2 md:w-3/4 m-auto">
               <img src="./asset/claw-1.png" alt="">
               <p class="text-sm font-light text-center mt-2">Claw to grab the ball inside.</p>
